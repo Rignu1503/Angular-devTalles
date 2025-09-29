@@ -1,0 +1,20 @@
+<h1>Dragon ball page</h1>
+<hr>
+
+<section class="row">
+
+  <div class="col-12 col-sm-6">
+    <!--[Evento que esta en el hijo] = lo que vamos a mandar desde el hijo-->
+    <dragonball-character-add
+      (newCharacter)="daragoballService.addCharacter($event)"
+    />
+
+  </div>
+
+  <div class="col-12 col-sm-6">
+
+    <dragonball-character-list [characters]="daragoballService.characters()" [listName]="title" />
+                              <!--[Property que esta en el padre] = lo que vamos a mandar desde el padre   -->
+
+  </div>
+</section>

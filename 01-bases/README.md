@@ -2,6 +2,9 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
 
+
+##Las señales es una forma moderna de cambiar el estado de nuestra aplicacion, no solo se limita a 
+
 ## Development server
 
 To start a local development server, run:
