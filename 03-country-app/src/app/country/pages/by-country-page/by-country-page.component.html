@@ -1,3 +1,12 @@
-<country-search-input placeholcder="Buscar por pais"/>
+<country-search-input placeholcder="Buscar por pais"
+  (value)="query.set($event)"
+/>
 
-<country-list />
+
+
+<country-list
+  [countries]="countryResource.value() ?? []"
+  [errorMessager]="countryResource.error() "
+  [isEmpty]="countryResource.value.length == 0"
+  [isLoading]="countryResource.isLoading()"
+/>

@@ -1,0 +1,21 @@
+
+
+<section class="stats shadow flex flex-center items-center">
+  <div class="stat place-items-center">
+    <div class="stat-title">Población</div>
+    <div class="stat-value">{{ country()?.population | number}}</div>
+    <div class="stat-desc">{{ currentYear() }}</div>
+  </div>
+
+  <div class="stat place-items-center">
+    <div class="stat-title">Nombre</div>
+    <div class="stat-value text-secondary">{{ country()?.name }}</div>
+    <div class="stat-desc text-secondary">{{ country()?.region }}</div>
+  </div>
+
+  <div class="stat place-items-center">
+    <div class="stat-title">Sub Region</div>
+    <div class="stat-value">{{ country()?.subRegion }}</div>
+    <div class="stat-desc">{{ country()?.region }}</div>
+  </div>
+</section>
